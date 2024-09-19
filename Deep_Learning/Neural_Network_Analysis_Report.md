@@ -1,7 +1,7 @@
 # Neural Network Analysis Report
 
 # Overview
-This assignment uses machine learning and neural networks to help select funding applicants with the best chances of success in their business ventures. The goal of the assignment was to design a neural network model to acheive higher than 75% accuracy. 
+This assignment uses machine learning and neural networks to help select funding applicants with the best chances of success in their business ventures. The goal of the assignment was to design a neural network model to achieve higher than 75% accuracy. 
 
 # Results
     ## Data Preprocessing
@@ -9,7 +9,7 @@ This assignment uses machine learning and neural networks to help select funding
 
     ![alt text](image.png)
     
-    * Target Variable: The taget variable was the binary column, "IS_SUCCESSFUL"
+    * Target Variable: The target variable was the binary column, "IS_SUCCESSFUL"
 
     * Feature Variables: The original dataset included 12 columns of data: 
         'EIN', 'NAME', 'APPLICATION_TYPE', 'AFFILIATION', 'CLASSIFICATION',
@@ -21,7 +21,7 @@ This assignment uses machine learning and neural networks to help select funding
     ## Compiling, Training and Evaluating the Model
     The following steps were performed to optimize model performance:
 
-    * Data Prep: The rare occurances in the APPLICATION_TYPE and CLASSIFICATION  
+    * Data Prep: The rare occurrences in the APPLICATION_TYPE and CLASSIFICATION  
       columns were binned, reducing them from 17 to 9 and 71 to 8, respectively. 
 
     * Categorical Encolding: get_dummies() was used to convert categorical variables 
@@ -30,7 +30,7 @@ This assignment uses machine learning and neural networks to help select funding
     * Scaling: A StandardScaler() was applied to manage the distance in feature 
       ranges so that features contribute more evenly to the model.
 
-    * Model:  The data was run through 4 seperate neural network models to see if we 
+    * Model:  The data was run through 4 separate neural network models to see if we 
       could meet a target accuracy of 75% 
 
       * Model 1 (nn)
